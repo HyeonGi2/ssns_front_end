@@ -1,0 +1,47 @@
+/* 1. header영역 높이 및 배경색 지정 */
+header { 
+    height: 50px;
+    background-color: blueviolet;
+}
+
+/* 1.1 header영역 '선택'영역 드롭박스 */
+.header_Dropbox{ 
+    width: 150px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 7px 7px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    
+}
+
+
+/* 1.2 header영역 color 설정 */
+.header_Span{ 
+    color:white;
+}
+
+
+
+/* 2. 메뉴 토글 위치 설정 */
+#header_Toggle{ 
+    padding: 5px;
+    margin: 5px;
+    
+}
+
+/* 2.1 메뉴 토글바 마우스 오버 시 포인터 설정 */
+#hd_toggle:hover{ 
+    cursor: pointer;
+}
+
+/* 3. header 밑 tap 영역 */
+.tablist { 
+    height: 40px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
+    background-color: white;
+}

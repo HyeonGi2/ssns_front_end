@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--default.css-->
+        <link rel="stylesheet" href="../../assets/css/cmn/default.css">
+        <!--bbsList.css-->
+        <link rel="stylesheet" href="../../assets/css/sub/bbsList.css">
+
+    <title>BbsList</title>
+</head>
+<body>
+    <!--header영역-->
+    <header>
+        <div id="hd_ShellBar">Shellbar</div> 
+        <div id="hd_TabBar">TabBar</div>
+    </header>    <!--header영역 종료-->
+   
+    <!-- content영역 -->
+    <div class="content">
+        <!--사이드바 영역-->
+        <aside id="SidePanel">
+            Side Panel
+        </aside> <!--사이드바 영역 종료-->
+
+
+
+        <!--page 영역-->
+        <section class="Page" id="bbsList_Page">
+            <!-- page header -->
+            <div id="List_page_Header" style="height:30%; margin: 5px;"> <!--border: 1px solid red;-->
+                <div>
+                    <h2 id="Header_title">게시판</h2>
+                    <form>
+                    <div id="Filter_Bar" > <!--border: 1px solid blue;-->
+                        <div  style="width: 50%;" class="col"> <!-- 게시기간, 제목  border: 1px solid red; -->
+                            <ul>
+                                <li>게시기간</li>
+                                <input id="Input_line"  type="date" /> ~ <input id="Input_line" type="date" />
+                            </ul>
+                            <ul style="margin-top: 3%;">
+                                <li>제목</li>
+                                <input  id="Input_line" type="text" placeholder="제목"> 
+                            </ul>
+                        </div>
+
+                        <div  style="width: 50%;"> <!--상태, 등록자, 수정자 border: 1px solid skyblue;  -->
+                            <ul>
+                                <li>상태</li>
+                                <select id="Select_line" style="width: 20%;">
+                                    <option>전체</option>
+                                    <option>전체1</option>
+                                    <option>전체1</option>
+                                </select>
+                            </ul>
+                            <div style="margin-top: 3%; display: flex; justify-content: start;">
+                                <ul>
+                                    <li>등록자</li>
+                                    <input id="Input_line" type="text" placeholder="작성자">
+                                </ul>
+                                <ul style="margin-left: 20%;">
+                                    <li>수정자</li>
+                                    <input id="Input_line" type="text" placeholder="수정자">
+                                </ul>
+                                <button class="btn_b" style="margin-left: 20%;">조회</button>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>   <!-- page header 종료-->
+
+            <style>
+                #page_List_hd{
+                    border-bottom: 1px solid #D9D9D9;
+                 
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+  
+                    display: flex; 
+                    justify-content: flex-start;
+                    height: 30px;
+                    line-height: 30px;
+                    padding-right: 15px;
+                    
+                    background-color: white; 
+          
+                    }
+                
+            </style>
+            <!-- 리스트영역 -->
+            <div id="page_List" style="height: 60%; margin-left: 5px; margin-right: 5px;  background-color: white; border-radius: 10px;">
+                    <h3>리스트</h3>
+                    <div class="col" id="page_List_hd" style="text-align: center;  border-bottom: 1px solid black;">
+                        <div class="col" style="width: 4%;">NO</div>
+                        <div class="col" style="width: 35%;">제목</div>
+                        <div class="col" style="width: 10%;">파일수</div>
+                        <div class="col" style="width: 10%;">등록자</div>
+                        <div class="col" style="width: 10%;">등록일시</div>
+                        <div class="col" style="width: 10%;">수정자</div>
+                        <div class="col" style="width: 10%;">수정일시</div>
+                        <div class="col" style="width: 5%">조회수</div>
+                    </div>
+                    <div>
+                    <div class="col" style=" text-align: center; display: flex; justify-content: flex-start; border-bottom: 1px solid black;">
+                        <div class="col" style="width: 4%;">1</div>
+                        <div class="col" style="width: 35%; text-align: left;">게시글 테스트</div>
+                        <div class="col" style="width: 10%;">1</div>
+                        <div class="col" style="width: 10%;">홍길동</div>
+                        <div class="col" style="width: 10%;">2023-03-03 00:00:00:00</div>
+                        <div class="col" style="width: 10%;">이순신</div>
+                        <div class="col" style="width: 10%;">2023-03-03 00:00:00:00</div>
+                        <div class="col" style="width: 5%">100</div>
+                       
+                    </div>
+                    <div class="col" style=" text-align: center; display: flex; justify-content: flex-start; border-bottom: 1px solid black;">
+                        <div class="col" style="width: 4%;">1</div>
+                        <div class="col" style="width: 35%; text-align: left;">게시글 테스트</div>
+                        <div class="col" style="width: 10%;">1</div>
+                        <div class="col" style="width: 10%;">홍길동</div>
+                        <div class="col" style="width: 10%;">2023-03-03 00:00:00:00</div>
+                        <div class="col" style="width: 10%;">이순신</div>
+                        <div class="col" style="width: 10%;">2023-03-03 00:00:00:00</div>
+                        <div class="col" style="width: 5%">100</div>
+                       
+                    </div>
+                    </div>
+            </div>
+            <!-- footer toolbar -->
+                <div id="footer_toolbar">
+
+                        <button class="btn_w" style="margin-right: 7px;">신규</button>
+
+                </div>
+
+            </div>
+        </section><!--page 영역 종료 -->
+    </div>  <!-- content영역 종료 -->
+  
+    
+    <!--푸터영역-->
+    <footer>
+            <div id="ft_StatusBar">footer</div>
+    </footer> <!--푸터영역 종료-->
+    
+
+
+</body>
+</html>
