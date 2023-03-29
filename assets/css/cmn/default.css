@@ -1,7 +1,7 @@
 /* 1. header영역 높이 및 배경색 지정 */
 header { 
     height: 50px;
-    background-color: blueviolet;
+    background-color: #0062AC;
 }
 
 /* 1.1 header영역 '선택'영역 드롭박스 */
